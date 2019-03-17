@@ -1,0 +1,48 @@
+{
+  "name": "tanggal-merah",
+  "description": "Display public holidays and observances information (Holiday API Implementation)",
+  "version": "0.0.0",
+  "author": "Roni Yusuf @rymanalu",
+  "bin": {
+    "tanggal-merah": "./bin/run"
+  },
+  "bugs": "https://github.com/rymanalu/tanggal-merah/issues",
+  "dependencies": {
+    "@oclif/command": "^1.5.11",
+    "@oclif/config": "^1.12.9",
+    "@oclif/plugin-help": "^2.1.6",
+    "axios": "^0.18.0",
+    "cli-ux": "^5.2.1",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1.2.4",
+    "chai": "^4.1.2",
+    "eslint": "^5.15.0",
+    "eslint-config-oclif": "^3.1.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.3.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/rymanalu/tanggal-merah",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "tanggal-merah"
+  },
+  "repository": "rymanalu/tanggal-merah",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\""
+  }
+}
